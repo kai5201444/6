@@ -1,67 +1,67 @@
 {
-// 每日一言 (随机显示欢迎语)
-"dairyWords": [{
-    "name": "rating",
-    "request": {
-     "method": "GET",
-     "url": {
-      "raw": "https://v.api.aa1.cn/api/yiyan/index.php?type=get"
+// 每日一言（随机显示欢迎语)
+“乳品词汇”: [{
+    "名称": "评级",
+    "请求": {
+     “方法”: "获取",
+     "网址": {
+      "未加工": "https://v.api.aa1.cn/api/yiyan/index.php？type=get "
      }
     },
-    "response": {
-        "result": "$.data.content"
+    “回应”: {
+        "结果": " $.data.content "
     },
-    "expires" : "43200"
+    "过期" : "43200"
 }],
 
 
 
-// 首页推荐视频 (豆瓣)
-"recommend": [{
- "name": "豆瓣推荐",
- "request": {
-  "method": "GET",
-  "header": [{
-   "key": "Referer",
-   "value": "https://movie.douban.com/"
+// 首页推荐视频（豆瓣)
+"推荐": [{
+ "名称": "豆瓣推荐",
+ "请求": {
+  “方法”: "获取",
+  "标题": [{
+   "钥匙": "推荐人",
+   “价值”: " https://movie.douban.com/"
   }],
-  "url": {
-   "raw": "https://movie.douban.com/j/new_search_subjects?sort=U&range=0,10&tags=&playable=1&start=0&year_range=2022,2022"
+  "网址": {
+   "未加工": "https://movie.douban.com/j/new_search_subjects？sort=U&range=0，10 & tags = & playable = 1 & start = 0 & year _ range = 2022，2022 "
   }
  },
- "response": {
-  "result": "$.data",
-  "data": [{
-    "key": "name",
-    "value": "title"
+ “回应”: {
+  "结果": "$.数据",
+  "数据": [{
+    "钥匙": "名称",
+    “价值”: "标题"
    },
    {
-    "key": "note",
-    "value": "rate"
+    "钥匙": "注意",
+    “价值”: "利率"
    },
    {
-    "key": "pic",
-    "value": "cover"
+    "钥匙": "图片",
+    “价值”: “封面”
    }
   ]
  },
- "expires" : "86400"
+ "过期" : "86400"
 }],
 
 
 
 
-// 评分 (数据来自 豆瓣)
-"rating": [{
-    "name": "rating",
-    "request": {
-     "method": "GET",
-     "url": {
-      "raw": "https://api.wmdb.tv/api/v1/movie/search?q={name}&limit=1"
+// 评分（数据来自 豆瓣)
+"评级": [{
+    "名称": "评级",
+    "请求": {
+     “方法”: "获取",
+     "网址": {
+      "未加工": "https://api.wmdb.tv/api/v1/movie/search？q={name}&limit=1 "
      }
     },
-    "response": {
-        "result": "this",
+    “回应”: {
+        "结果": “这个”,
         "data": [
        {
         "key": "rating",
@@ -122,7 +122,7 @@
       "api": "https://cdn05042023.gitlink.org.cn/YGFXZ/TVBOX/raw/branch/master/JS/drpy2.min.js",
       "ext": "https://cdn05042023.gitlink.org.cn/YGFXZ/TVBOX/raw/branch/master/JS/央视片库.js"
     },
-    {"key":"央视剧场","name":"🇨🇳央视大全","type":3,"api":"https://8815.kstore.space/lib/央视剧场.js","searchable":1,"changeable":1,"timeout":10},
+    
 {
       "key": "2400部恐怖电影📲",
       "name": "💖分享电影",
